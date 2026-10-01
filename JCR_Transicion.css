@@ -1,0 +1,174 @@
+
+/* Alumno: Juan Coss Rico */
+/* Fecha: 01/10/2026 */
+/* 5PRAM*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1eb;
+    color: #242424;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #641b2e;
+    border-bottom: 5px solid #d4a84f;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: #292929;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e7c16b;
+    color: black;
+}
+
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.caja {
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #ded8ce;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.caja img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.caja h2 {
+    color: #641b2e;
+    transition: color 0.4s ease;
+}
+
+/* Elemento 1: Cambio de color */
+.efecto1:hover {
+    background-color: #fff0c9;
+}
+
+/* Elemento 2: Cambio de tamaño */
+.efecto2:hover {
+    transform: scale(1.05);
+}
+
+/* Elemento 3: Cambio de borde */
+.efecto3:hover {
+    border: 6px solid #b47a17;
+}
+
+/* Elemento 4: Cambio de sombra */
+.efecto4 {
+    box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+}
+
+.efecto4:hover {
+    box-shadow: 0 15px 30px rgba(65,25,35,0.3);
+}
+
+/* Elemento 5: Cambio de color de texto */
+.efecto5:hover h2 {
+    color: #c17b00;
+}
+
+/* Elemento 6: Imagen con zoom */
+.efecto6:hover img {
+    transform: scale(1.12);
+}
+
+/* Elemento 7: Movimiento horizontal */
+.efecto7:hover {
+    transform: translateX(10px);
+}
+
+/* Elemento 8: Efecto combinado */
+.efecto8:hover {
+    background-color: #fce8e8;
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(100,27,46,0.22);
+}
+
+/* Elemento 9: Efecto combinado */
+.efecto9:hover {
+    border: 5px solid #39735b;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(25,75,53,0.2);
+}
+
+.efecto9:hover h2 {
+    color: #39735b;
+}
+
+/* Pie de página */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #292929;
+    border-top: 5px solid #d4a84f;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border: 2px dashed #e7c16b;
+    color: #e7c16b;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+}
